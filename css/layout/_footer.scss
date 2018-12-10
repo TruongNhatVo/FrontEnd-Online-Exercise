@@ -4,8 +4,11 @@
 .footer {
     padding-top: 130px;
     font-size: 14px;
+    p {
+        text-align: center;
+    }
     @include breakpoint($brp) {
       padding: -calcVw(155,$spWidth) 0 -calcVw(60,$spWidth);
       font-size: -calcVw(26,$spWidth);
-		}
+        }
 }
