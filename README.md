@@ -1,2 +1,2 @@
-# FrontEnd-Online-Exercise
+# FrontEnd-Online-Exercise 1
 HTML, CSS, JS
