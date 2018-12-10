@@ -1,0 +1,42 @@
+/*------------------- Wraper -------------------*/
+.wrapper {
+    width: 100%;
+    min-width: 1080px;
+    @include breakpoint($brp) {
+        width: 100%;
+        min-width: inherit;
+    }
+}
+
+.container {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    @include breakpoint($brp) {
+        max-width: 100%;
+        padding: 0 -calcVw(23, $spWidth);
+    }
+}
+
+.title__secondary {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    line-height: 1;
+    @include breakpoint($brp) {
+        padding-top: -calcVw(89,$spWidth);
+    }
+    span {
+        font-family: $font-heading;
+        color: $color-font;
+        font-weight: bold;
+        font-size: 24px;
+        @include breakpoint($brp) {
+            font-size: -calcVw(48, $spWidth);
+        }
+        &:before {
+            content: url('../images/icon_ttl.png');
+            display: block;
+        }
+    }
+}

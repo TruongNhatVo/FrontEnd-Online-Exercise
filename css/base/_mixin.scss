@@ -1,0 +1,15 @@
+@mixin breakpoint($screenSize) {
+    @media (max-width: $screenSize) {
+        @content
+    };
+}
+
+@function -calcVw($child , $parent) {
+  @return unquote((($child / $parent)*100) + 'vw');
+}
+
+@mixin transformCenter {
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+}
