@@ -223,9 +223,11 @@
 	transition: 300ms all ease-in;
 	display: block;
 	font-size: 14px;
-	&:hover {
+	@include breakpoint($brp) {
 		font-size: -calcVw(32,$spWidth);
 		padding: -calcVw(44,$spWidth) 0;
+	}
+	&:hover {
 		text-decoration: none;
 		background: linear-gradient( to right, rgb(201,226,63) 0%, rgb(71,227,220) 100%);
 	}

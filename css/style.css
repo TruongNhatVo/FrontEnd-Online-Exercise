@@ -706,9 +706,14 @@ button:focus, input:focus, a:focus {
   font-size: 14px;
 }
 
+@media (max-width: 750px) {
+  .btn__more {
+    font-size: 4.26667vw;
+    padding: 5.86667vw 0;
+  }
+}
+
 .btn__more:hover {
-  font-size: 4.26667vw;
-  padding: 5.86667vw 0;
   text-decoration: none;
   background: -webkit-gradient(linear, left top, right top, from(#c9e23f), to(#47e3dc));
   background: -webkit-linear-gradient(left, #c9e23f 0%, #47e3dc 100%);
